@@ -1,0 +1,42 @@
+.top-section {
+  display: flex;
+  width: 100%;
+  border-bottom: 2px solid #333333;
+  padding-bottom: 15px;
+}
+.top-section .top-left {
+  display: flex;
+  flex: 1;
+  justify-content: flex-start;
+  align-items: center;
+}
+.top-section .top-left .star {
+  font-size: 25px;
+  color: #AAAAAA;
+  margin-bottom: 4px;
+}
+.top-section .top-left .user-name {
+  font: normal normal 600 25px/34px Open Sans;
+  color: #000000;
+  padding-left: 17px;
+}
+.top-section .top-right {
+  display: flex;
+  flex: 1;
+  justify-content: flex-end;
+}
+.top-section .top-right .order-button {
+  width: 200px;
+  height: 40px;
+  font: normal normal normal 18px/21px Arial;
+  color: #FCFEFF;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #404040;
+  border-radius: 4px;
+  cursor: pointer;
+}
+.top-section .top-right .order-button:hover {
+  background-color: #333333;
+}/*# sourceMappingURL=top-header.css.map */

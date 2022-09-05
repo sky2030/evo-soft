@@ -1,0 +1,55 @@
+.overlay {
+  position: fixed;
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  z-index: 1000;
+  top: 0;
+  left: 0;
+  right: 100%;
+  bottom: 100%;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: rgba(10, 10, 10, 0.6823529412);
+}
+.overlay .loader {
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-start;
+  width: 60px;
+  height: 60px;
+  -webkit-animation: spin 2s linear infinite;
+          animation: spin 2s linear infinite;
+  position: absolute;
+  top: 45%;
+  left: 45%;
+}
+.overlay .loader svg {
+  fill: rgba(0, 0, 0, 0.5529411765);
+}
+@-webkit-keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+.overlay .close-button {
+  z-index: 2000;
+  position: fixed;
+  right: 10;
+  width: 80%;
+  display: flex;
+  justify-content: flex-end;
+  margin-top: 10px;
+}/*# sourceMappingURL=loader.css.map */

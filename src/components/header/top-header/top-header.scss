@@ -1,0 +1,59 @@
+.top-section{
+    display: flex;
+    width: 100%;
+    border-bottom: 2px solid #333333;
+    padding-bottom: 15px;
+
+    .top-left{
+        display: flex;
+        flex:1;
+        justify-content: flex-start;
+        align-items: center; 
+
+        .star{
+        font-size: 25px;
+        color:#AAAAAA;
+        margin-bottom: 4px;
+        }
+        
+        .user-name{   
+        font: normal normal 600 25px/34px Open Sans;                     
+        color:#000000;
+        padding-left:17px;
+        }                       
+     }
+
+     .top-right{
+        display: flex;
+        flex:1;
+        justify-content: flex-end;
+
+        .order-button{
+             width:200px; 
+             height: 40px;
+             font: normal normal normal 18px/21px Arial; 
+             color:#FCFEFF;
+             display: flex;
+             justify-content: center;
+             align-items: center;
+             background-color: #404040;
+             border-radius: 4px;
+             cursor: pointer;
+             
+             &:hover{
+                 background-color: #aaa5a5;
+                 color:#404040;
+                }
+                        
+             }   
+        }
+}
+
+
+
+
+
+
+
+
+    

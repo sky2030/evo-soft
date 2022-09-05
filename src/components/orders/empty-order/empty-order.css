@@ -1,0 +1,44 @@
+.empty-order-wrapper {
+  background-color: #FAFAFA;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 200px;
+  width: 90%;
+  font: normal normal normal 21px/28px Open Sans;
+  letter-spacing: 0px;
+  color: #CCCCCC;
+  position: "relative";
+  width: "100%";
+  height: "100%";
+  overflow: "auto";
+}
+.empty-order-wrapper .loader {
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-start;
+  width: 60px;
+  height: 60px;
+  -webkit-animation: spin 2s linear infinite;
+          animation: spin 2s linear infinite;
+  position: relative;
+}
+.empty-order-wrapper .loader svg {
+  fill: rgba(0, 0, 0, 0.3215686275);
+}
+@-webkit-keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}/*# sourceMappingURL=empty-order.css.map */
