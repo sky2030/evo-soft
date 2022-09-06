@@ -5,13 +5,14 @@ import Mobile from '../../icons/mobile.svg';
 import Building from '../../icons/building.svg';
 import Home from '../../icons/home.svg';
 
-import { HeaderInfo } from '../../models/header-model';
+import { useSelector } from 'react-redux';
+import { State } from '../../../state';
 
-interface HeaderInfoProps {
-    info?: HeaderInfo;
-}
 
-export const HeaderInfoSection = ({ info }: HeaderInfoProps) => {
+
+export const HeaderInfoSection = () => {
+    const info = useSelector((state: State) => state.header.header);
+
     return (
         <div className='info'>
             <div className='row'>

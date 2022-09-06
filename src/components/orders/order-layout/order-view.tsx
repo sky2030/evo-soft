@@ -1,14 +1,13 @@
 import React from 'react'
-import { ORDER_TYPE, Sent } from '../../models/orders-model';
+import { ORDER_TYPE } from '../../models/orders-model';
 import { EmptyOrder } from '../empty-order/empty-order';
 import { SentTable } from '../sent-table/sent-table';
 
 interface SentOrderViewProps {
     currentTab: ORDER_TYPE;
-    orderSent?: Sent[];
 }
 
-export const OrderView = ({ currentTab, orderSent }: SentOrderViewProps): JSX.Element => {
+export const OrderView = ({ currentTab }: SentOrderViewProps): JSX.Element => {
     switch (currentTab) {
         case ORDER_TYPE.ORDER_A:
             return (
@@ -20,7 +19,7 @@ export const OrderView = ({ currentTab, orderSent }: SentOrderViewProps): JSX.El
             );
         case ORDER_TYPE.ORDER_AAA:
             return (
-                <SentTable orderDetails={orderSent} />
+                <SentTable />
             );
         case ORDER_TYPE.ORDER_B:
             return (

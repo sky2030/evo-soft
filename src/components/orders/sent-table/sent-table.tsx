@@ -1,13 +1,13 @@
 import moment from 'moment';
 import React, { useCallback } from 'react';
-import { Sent } from '../../models/orders-model';
+import { useSelector } from 'react-redux';
+import { State } from '../../../state';
 import './sent-table.scss';
 
-interface SentTableProps {
-    orderDetails?: Sent[];
-}
 
-export const SentTable = ({ orderDetails }: SentTableProps): JSX.Element => {
+export const SentTable = (): JSX.Element => {
+
+    const orderDetails = useSelector((state: State) => state.orders.orders?.orders_AAA.sent);
 
     const convertDate = useCallback((date: Date) => {
         return moment(date).format("ddd, MMM DD");

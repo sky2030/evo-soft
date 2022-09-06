@@ -1,15 +1,12 @@
 import React, { useState } from 'react'
-import { ORDER_TYPE, Order } from '../../models/orders-model'
+import { ORDER_TYPE } from '../../models/orders-model'
 import { EmptyOrder } from '../empty-order/empty-order';
 import { Tab } from '../tabs/tab';
 import './orders.scss';
 import { OrderView } from './order-view';
 
-interface OrdersProps {
-    orders?: Order;
-}
 
-export const Orders = ({ orders }: OrdersProps) => {
+export const Orders = () => {
 
     const [currentTab, setCurrentTab] = useState<ORDER_TYPE>(ORDER_TYPE.ORDER_AAA);
     const [sentActive, setSentActive] = useState(true);
@@ -33,7 +30,7 @@ export const Orders = ({ orders }: OrdersProps) => {
                 </div>
             </div>
             {sentActive ?
-                <OrderView currentTab={currentTab} orderSent={orders?.orders_AAA.sent} />
+                <OrderView currentTab={currentTab} />
                 : <EmptyOrder />}
 
         </Tab>

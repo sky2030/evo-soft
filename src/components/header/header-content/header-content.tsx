@@ -1,18 +1,17 @@
 import React, { useCallback } from 'react';
-import { HeaderInfo } from '../../models/header-model';
 import './header-content.scss';
 
 import UserLarge from '../../icons/user-large.svg';
 import moment from 'moment';
 import { HeaderInfoSection } from './header-info';
 import { Status } from './status';
+import { useSelector } from 'react-redux';
+import { State } from '../../../state';
 
 
-interface HeaderContentProps {
-    info?: HeaderInfo;
-}
+export const HeaderContent = () => {
 
-export const HeaderContent = ({ info }: HeaderContentProps) => {
+    const info = useSelector((state: State) => state.header.header);
 
     const convertDate = useCallback(() => {
         const str = info?.carrier_status.since;
@@ -42,8 +41,8 @@ export const HeaderContent = ({ info }: HeaderContentProps) => {
                 <img src={UserLarge} alt="user" width='63px' height='72px' />
                 {info?.gender.toUpperCase()} - {calculate_age()}
             </div>
-            <HeaderInfoSection info={info} />
-            <Status info={info} />
+            <HeaderInfoSection />
+            <Status />
 
             <div className='carrrier-status'>
                 <div className='status-card'>
