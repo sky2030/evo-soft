@@ -1,11 +1,9 @@
 import React from 'react'
-import { HeaderInfo } from '../../models/header-model';
+import { useSelector } from 'react-redux';
+import { State } from '../../../state';
 
-interface StatusProps {
-    info?: HeaderInfo;
-}
-
-export const Status = ({ info }: StatusProps) => {
+export const Status = () => {
+    const info = useSelector((state: State) => state.header.header);
     return (
         <div className='status'>
             <div className='top'> 90-DAY COMMUNICATION ACTIVITY</div>
