@@ -31,8 +31,8 @@ export const SentTable = (): JSX.Element => {
             <div className='table-header'>
                 <div className='date-head'>DATE & TIME </div>
                 <div className='subject-head'>SUBJECT</div>
-                <div className='general-head'>COMMUNICATION TYPE </div>
-                <div className='general-head'>ORDER # </div>
+                <div className='com-head'>COMMUNICATION TYPE </div>
+                <div className='order-head'>ORDER # </div>
                 <div className='empty-header'></div>
             </div>
             {orderDetails && orderDetails.map((item): JSX.Element => {
