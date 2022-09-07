@@ -1,39 +1,41 @@
 .sent-content{
-    width: 90%;
+    width: 95%;
 
     .table-header{
         display: flex;
         height:25px;
-        justify-content: space-between;
+        justify-content: flex-start;
         align-items: center;
         font: normal normal normal 10px/11px Arial;
         letter-spacing: 0px;
         color: #444444;
         border-bottom: 1px solid #D8D8D8;
+        width:100%;
+        margin-left: 5px;
 
         .date-head{
-            width:200px;
+            width:15%;
             display: flex;
             height:25px;
             align-items: center;
             justify-content: flex-start;
             font: normal normal normal 10px/11px Arial;
             letter-spacing: 0px;
-            color: #444444;
+            color: #444444; 
              
         }
         .subject-head{
-            width:400px;
+            width:35%;
             display: flex;
-            height:25px;
+            height:25px; 
             align-items: center;
             justify-content: flex-start;
             font: normal normal normal 10px/11px Arial;
             letter-spacing: 0px;
-            color: #444444;
+            color: #444444;          
         }
        .general-head{
-            width:200px;
+            width:15%;
             display: flex;
             height:25px;
             align-items: center;
@@ -41,13 +43,17 @@
             font: normal normal normal 10px/11px Arial;
             letter-spacing: 0px;
             color: #444444;
+            
+        }
+        .empty-header{
+            width:20%;
         }
          
     }
 
     .table-row{
         height: 70px;
-        font: normal normal normal 14px/19px Open Sans;
+        font: normal normal normal 14px/19px Arial;
         letter-spacing: 0px;
         color: #333333;
         display: flex;
@@ -55,71 +61,79 @@
         border-bottom: 1px solid #95989A;
 
         .date-time{
-            width:200px;
+            width:15%;
             display: flex;
             flex-direction: column;
             align-items: flex-start;
-            justify-content: center; 
+            justify-content: center;
+            padding-left: 5px;
             .date{
-                font: normal normal normal 16px  Open Sans;
+                font: normal normal normal 16px  Arial;
                 letter-spacing: 0px;
                 color: #333333; 
             }
     
             .time{
-                font: normal normal normal 14px Open Sans;
+                font: normal normal normal 14px Arial;
                 letter-spacing: 0px;
                 color: #333333; 
             }
         }
 
         .subject{
-            width: 400px;
+            width: 35%;
             display: flex;
             flex-direction: column;
             align-items: flex-start;
-            justify-content: center; 
-
+            justify-content: center;  
             .sub-title{
-                font: normal normal normal 16px/22px Open Sans;
+                font: normal normal normal 16px/22px Arial;
                 letter-spacing: 0px;
                 color: #333333;
             }
     
             .sub-email{
                 text-align: left;
-                font: normal normal normal 14px/19px Open Sans;
+                font: normal normal normal 14px/19px Arial;
                 letter-spacing: 0px;
                 color: #333333;
             }
         }
 
         .general-info{
-            width:200px;
+            width:15%;
             display: flex; 
             align-items: center;
-            justify-content: flex-start;
+            justify-content: flex-start; 
         }
 
-
-        
-
-        .re-send-button{
-            background-color: #7D869A;
-            width: 88px;
-            height: 28px;
+        .button-wrapper{
+            width:10%;
             display: flex;
-            justify-content: center;
-            align-items: center;
-            font: normal normal normal 12px/14px Arial;
-            letter-spacing: 0px;
-            color: #FFFFFF;
-            border-radius: 4px;
-            cursor: pointer;
-            &:hover{
-                background-color: #8a8d92;
+            justify-content: flex-end;
+            align-items: center; 
+
+            .re-send-button{
+                background-color: #7D869A;
+                width: 88px;
+                height: 28px;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                font: normal normal normal 12px/14px Arial;
+                letter-spacing: 0px;
+                color: #FFFFFF;
+                border-radius: 4px;
+                cursor: pointer;
+                &:hover{
+                    background-color: #8a8d92;
+                }
             }
-        }
+        }        
+
+    }
+    .even-row{
+        background-color: #F2F4F7;
     }
 
     

@@ -48,8 +48,7 @@ export const HeaderContent = () => {
                 <div className='status-card'>
                     SMS CARRIER STATUS
                     <div className='status-number'>{info?.carrier_status.status}</div>
-                    <div className='label'> SINCE {convertDate()}</div>
-                    <div className='card-label'></div>
+                    <div className='card-label'>SINCE {convertDate()}</div>
                 </div>
             </div>
         </div>

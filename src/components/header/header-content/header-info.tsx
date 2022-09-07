@@ -17,18 +17,18 @@ export const HeaderInfoSection = () => {
         <div className='info'>
             <div className='row'>
                 <div className='info-icon'>
-                    <img src={User} alt="user" width="25px" height="30px" />
+                    <img src={User} alt="user" width="25px" height="20px" />
                 </div>
                 <div className='info-text-normal'>
                     #{info?.id}
                 </div>
             </div>
-            <div className='row'>
+            <div className='row align-gap'>
                 <div className='info-icon'>
-                    <img src={Mobile} alt="user" width="25px" height="17px" />
+                    <img src={Mobile} alt="user" width="25px" height="15px" />
                 </div>
                 <div className='info-text-medium'>
-                    #{info?.mobile_phone}
+                    {info?.mobile_phone}
                 </div>
             </div>
             <div className='row'>
@@ -36,7 +36,7 @@ export const HeaderInfoSection = () => {
                     <img src={Building} alt="user" width="25px" height="17px" />
                 </div>
                 <div className='info-text-normal'>
-                    #{info?.work_phone}
+                    {info?.work_phone}
                 </div>
             </div>
             <div className='row'>
@@ -44,7 +44,7 @@ export const HeaderInfoSection = () => {
                     <img src={Home} alt="user" width="25px" height="17px" />
                 </div>
                 <div className='info-text-normal'>
-                    #{info?.home_phone}
+                    {info?.home_phone}
                 </div>
             </div>
             <div className='row'>
@@ -52,7 +52,7 @@ export const HeaderInfoSection = () => {
                     <span className='info-email-icon'>@</span>
                 </div>
                 <div className='info-text-normal'>
-                    #{info?.email}
+                    {info?.email}
                 </div>
             </div>
         </div>
