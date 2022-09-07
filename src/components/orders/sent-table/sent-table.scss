@@ -14,7 +14,7 @@
         margin-left: 5px;
 
         .date-head{
-            width:15%;
+            width:10%;
             display: flex;
             height:25px;
             align-items: center;
@@ -25,7 +25,7 @@
              
         }
         .subject-head{
-            width:35%;
+            width:40%;
             display: flex;
             height:25px; 
             align-items: center;
@@ -61,7 +61,7 @@
         border-bottom: 1px solid #95989A;
 
         .date-time{
-            width:15%;
+            width:10%;
             display: flex;
             flex-direction: column;
             align-items: flex-start;
@@ -81,7 +81,7 @@
         }
 
         .subject{
-            width: 35%;
+            width: 40%;
             display: flex;
             flex-direction: column;
             align-items: flex-start;
@@ -104,19 +104,18 @@
             width:15%;
             display: flex; 
             align-items: center;
-            justify-content: flex-start; 
+            justify-content: flex-start;  
         }
 
         .button-wrapper{
-            width:18%;
+            width:15%;
             display: flex;
             justify-content: flex-end;
             align-items: center; 
-
             .re-send-button{
                 background-color: #7D869A;
-                width: 88px;
-                height: 28px;
+                width: 150px;
+                height: 30px;
                 display: flex;
                 justify-content: center;
                 align-items: center;
