@@ -23,7 +23,7 @@ export const Orders = () => {
             <div className='order-header'>
                 <div className='order-tab-section'>
                     <div onClick={() => handleOrderSubTab(true)} className={sentActive ? ' order-tab order-tab-active' : 'order-tab'}>SENT</div>
-                    <div onClick={() => handleOrderSubTab(false)} className={!sentActive ? 'order-tab order-tab-active' : 'order-tab'}>ERRORS</div>
+                    <div onClick={() => handleOrderSubTab(false)} className={!sentActive ? 'order-tab-error order-tab-active' : 'order-tab-error'}>ERRORS</div>
                 </div>
                 <div className='order-header-title'>
                     RECENT ORDERS
