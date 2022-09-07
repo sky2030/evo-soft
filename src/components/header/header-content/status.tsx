@@ -10,18 +10,16 @@ export const Status = () => {
             <div className='bottom'>
                 <div className='status-card'>
                     <div className='status-number'>{info?.activity.sms}</div>
-                    <div className='label'>SMS</div>
-                    <div className='card-label'></div>
+                    <div className='card-label'>SMS</div>
                 </div>
                 <div className='status-card'>
                     <div className='status-number'>{info?.activity.email}</div>
-                    <div className='label'>EMAIL</div>
-                    <div className='card-label'></div>
+
+                    <div className='card-label'>EMAIL</div>
                 </div>
                 <div className='status-card-last'>
                     <div className='status-number'>{info?.activity.orders}</div>
-                    <div className='label'>ORDERS</div>
-                    <div className='card-label'></div>
+                    <div className='card-label'>ORDERS</div>
                 </div>
             </div>
         </div>

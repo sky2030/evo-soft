@@ -8,9 +8,9 @@
         flex-direction: column;
         align-items: center;
         justify-content: flex-start;
-        width:97px;
+        width:10vw;
         height: 125px;
-        text-align: left;
+
         font: normal normal normal 10px/11px Arial;
         letter-spacing: 0px;
         color: #333333;
@@ -24,15 +24,19 @@
     }
 
     .info{
-        width:279px;
+        width:20vw;
         height: 125px;
         background-color: #EDF5FF;
         margin-right: 5px;
 
+        .align-gap{
+            margin-top: -5px;
+        }
         .row{
             display: flex;
             justify-content: flex-start;
             align-items: center;
+            margin-bottom: 5px;
 
             .info-icon{
                 width:14px;
@@ -40,25 +44,22 @@
             }
 
             .info-text-normal{
-                padding-left: 5px; 
-                text-align: left;
-                font: normal normal normal 12px/17px Open Sans;
+                padding-left: 5px;        
+                font: normal normal normal 12px Arial;
                 letter-spacing: 0px;
                 color: #333333;
                 opacity: 1;
             }
             .info-text-medium{
-                padding-left: 5px; 
-                text-align: left;
-                font: normal normal normal 14px/21px Myriad Pro;
+                padding-left: 5px;  
+                font: normal normal normal 14px Myriad Pro;
                 letter-spacing: 0px;
                 color: #333333;
                 opacity: 1;
             }
             .info-text-email{
-                padding-left: 5px;
-                text-align: left;
-                font: normal normal normal 11px/15px Open Sans;
+                padding-left: 5px;        
+                font: normal normal normal 11px/15px Arial;
                 letter-spacing: 0px;
                 color: #333333;
                 opacity: 1;
@@ -70,7 +71,7 @@
     }
 
     .status{
-        width:559px;
+        width:50vw;
         height: 125px;
        
         .top{
@@ -81,7 +82,7 @@
             align-items: center;
             font-size: 12px;
             background-color: #EDF5FF;
-            font: normal normal normal 12px/17px Open Sans;
+            font: normal normal normal 12px Arial;
             letter-spacing: 0px;
             color: #333333;
             opacity: 1;
@@ -90,60 +91,50 @@
             display: flex; 
 
             .status-card{
-                width:185px;
+                width:40%;
                 height: 95px;
                 margin-right: 3px;
                 background-color: #EDF5FF;
                 .status-number{
                     text-align: center;
-                    font: normal normal 600 50px/68px Open Sans;
+                    font: normal normal 600 50px/68px Arial Sans;
                     letter-spacing: 0px;
                     color: #333333;
                     opacity: 1;
-                }
-                .label{
-                    z-index: 10; 
-                    text-align: center;
-                    letter-spacing: 0px;
-                    color:  #333333;
-                    font: normal normal 600 10px/14px Open Sans;
-                    position: fixed;
-                    margin-top: 5px;
-                    margin-left: 75px;
-                }
+                } 
                 .card-label{
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
                     width: 100%;                    
-                    background: #000000 0% 0% no-repeat padding-box; 
-                    opacity: 10%; 
+                    background: rgb(209, 215, 223);  
                     height: 25px;
+                    font: normal normal 600 10px/14px Arial;
+                    letter-spacing: 0px;
                                       
                 }
             }
             .status-card-last{
-                width:185px;
+                width:40%;
                 height: 95px; 
                 background-color: #EDF5FF;
                 .status-number{
                     text-align: center;
-                    font: normal normal 600 50px/68px Open Sans;
+                    font: normal normal 600 50px/68px Arial;
                     letter-spacing: 0px;
                     color: #333333;
                     opacity: 1;
                 }
-                .label{
-                    z-index: 10;  
-                    letter-spacing: 0px;
-                    color:  #333333;
-                    font: normal normal 600 10px/14px Open Sans;
-                    position: fixed;
-                    margin-top: 5px;
-                    margin-left: 75px;
-                }
+               
                 .card-label{
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
                     width: 100%;                    
-                    background: #000000 0% 0% no-repeat padding-box; 
-                    opacity: 10%; 
+                    background: rgb(209, 215, 223);  
                     height: 25px;
+                    font: normal normal 600 10px/14px Arial;
+                    letter-spacing: 0px;
                                       
                 }
             }
@@ -153,7 +144,7 @@
     }
 
     .carrrier-status{
-        width:225px;
+        width:20vw;
         height: 125px;
         display: flex;
         flex-direction: column;
@@ -161,6 +152,7 @@
         justify-content: center;
         background-color: #EDFFED;
         margin-left: 5px;
+        font: normal normal 12px Arial;
 
         .status-card{
             width:100%;
@@ -169,29 +161,23 @@
             text-align: center;
             .status-number{
                 text-align: center;
-                font: normal normal 600 50px/68px Open Sans;
+                font: normal normal 600 50px/68px Arial;
                 letter-spacing: 0px;
                 color: #333333;
                 opacity: 1;
-            }
-
-            .label{
-                z-index: 10; 
-                text-align: center;
-                letter-spacing: 0px;
-                color:  #333333;
-                font: normal normal 600 10px/14px Open Sans;
-                position: fixed;
-                margin-top: 5px;
-                margin-left: 45px;
             }
 
             .card-label{
-                text-align: left;
-                font: normal normal 600 10px/14px Open Sans;
+                font: normal normal 600 10px/14px Arial;
                 letter-spacing: 0px;
                 color: #333333;
-                opacity: 1;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                width: 100%;                    
+                background: #dae3da;  
+                height: 28px; 
+                letter-spacing: 0px;
             }
         }
     }

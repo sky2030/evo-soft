@@ -33,11 +33,11 @@ export const SentTable = (): JSX.Element => {
                 <div className='subject-head'>SUBJECT</div>
                 <div className='general-head'>COMMUNICATION TYPE </div>
                 <div className='general-head'>ORDER # </div>
-                <div className='general-head'></div>
+                <div className='empty-header'></div>
             </div>
             {orderDetails && orderDetails.map((item): JSX.Element => {
                 return (
-                    <div className='table-row' key={`${item.id}`}>
+                    <div className={item.id === 2 ? 'table-row even-row' : 'table-row'} key={`${item.id}`}>
                         <div className='date-time'>
                             <div className='date'>{convertDate(item.sent_dt)}</div>
                             <div className='time'>{convertTime(item.sent_tm)}</div>
@@ -48,7 +48,7 @@ export const SentTable = (): JSX.Element => {
                         </div>
                         <div className='general-info'>{item.type}</div>
                         <div className='general-info'>{`${item.order_id}`}</div>
-                        <div className='general-info'><div className='re-send-button'>RESEND</div></div>
+                        <div className='button-wrapper'><div className='re-send-button'>RESEND</div></div>
                     </div>
                 );
             })

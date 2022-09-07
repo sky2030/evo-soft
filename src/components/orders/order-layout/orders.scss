@@ -1,10 +1,11 @@
 .order-header{
-    width:90%;
+    width:95%;
     height: 41px;
     display: flex;
     justify-content: flex-start;
     align-items: center;
     background-color: #7D869A;
+    margin-top: 2px;
 
     .order-tab-section{
         width:140px;
@@ -46,7 +47,7 @@
         justify-content: center;
         align-items: center;
         text-align: center;
-        font: normal normal 600 16px/22px Open Arial; 
+        font: normal normal 600 16px/22px Arial;
         letter-spacing: 0px;
         color: #FFFFFF;
     }
