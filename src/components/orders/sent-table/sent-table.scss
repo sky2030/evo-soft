@@ -10,9 +10,7 @@
         letter-spacing: 0px;
         color: #444444;
         border-bottom: 1px solid #D8D8D8;
-        width:100%;
-        margin-left: 5px;
-
+        width:100%;  
         .date-head{
             width:10%;
             display: flex;
@@ -21,7 +19,8 @@
             justify-content: flex-start;
             font: normal normal normal 10px/11px Arial;
             letter-spacing: 0px;
-            color: #444444; 
+            color: #444444;
+            margin-left: 5px;
              
         }
         .subject-head{
@@ -32,9 +31,10 @@
             justify-content: flex-start;
             font: normal normal normal 10px/11px Arial;
             letter-spacing: 0px;
-            color: #444444;          
+            color: #444444;
+            margin-left: 5px;         
         }
-       .general-head{
+       .com-head{
             width:15%;
             display: flex;
             height:25px;
@@ -43,6 +43,19 @@
             font: normal normal normal 10px/11px Arial;
             letter-spacing: 0px;
             color: #444444;
+            margin-left: 15px;
+            
+        }
+        .order-head{
+            width:15%;
+            display: flex;
+            height:25px;
+            align-items: center;
+            justify-content: flex-start;
+            font: normal normal normal 10px/11px Arial;
+            letter-spacing: 0px;
+            color: #444444;
+            margin-left: 5px;
             
         }
         .empty-header{
@@ -85,7 +98,8 @@
             display: flex;
             flex-direction: column;
             align-items: flex-start;
-            justify-content: center;  
+            justify-content: center;
+            padding-left: 5px;  
             .sub-title{
                 font: normal normal normal 16px/22px Arial;
                 letter-spacing: 0px;
@@ -104,7 +118,8 @@
             width:15%;
             display: flex; 
             align-items: center;
-            justify-content: flex-start;  
+            justify-content: flex-start;
+            padding-left: -5px;
         }
 
         .button-wrapper{
